@@ -24,9 +24,9 @@ git clone  --recursive -c http.proxy="http://127.0.0.1:1082" https://android.goo
 export ARCH=arm64
 export SUBARCH=arm64
 # toolgcc中bin文件夹的位置 
-export CROSS_COMPILE=${pwd}/toolgcc/bin/aarch64-linux-android-
+export CROSS_COMPILE=${PWD}/toolgcc/bin/aarch64-linux-android-
 # 添加环境变量
-export PATH=${pwd}/toolgcc/bin:/mnt/d/kernel/toolclang/clang-r433403/bin:$PATH
+export PATH=${PWD}/toolgcc/bin:/mnt/d/kernel/toolclang/clang-r433403/bin:$PATH
 ```
 # 编译
 ```bash
@@ -40,8 +40,8 @@ make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm
 # 进入代码文件夹
 cd Xiaomi_Kernel_OpenSource
 
-make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=${pwd}/out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=ld.lld -C ${pwd} M=$(pwd) AUTOCONF_H=${pwd}/out/include/generated/autoconf.h
-make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=${pwd}/out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=ld.lld -C ${pwd} M=$(pwd) AUTOCONF_H=${pwd}/out/include/generated/autoconf.h
+make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=${PWD}/out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=ld.lld -C ${PWD} M=$(PWD) AUTOCONF_H=${PWD}/out/include/generated/autoconf.h
+make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=${PWD}/out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=ld.lld -C ${PWD} M=$(PWD) AUTOCONF_H=${PWD}/out/include/generated/autoconf.h
 ```
 
 # 参考
