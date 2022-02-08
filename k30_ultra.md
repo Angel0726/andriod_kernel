@@ -16,7 +16,7 @@ x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev xsltproc unzip
 git clone https://github.com/MiCode/Xiaomi_Kernel_OpenSource.git -b cezanne-r-oss
 # 编译工具gcc   版本号 95280bf
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 toolgcc
-# clang
+# clang  如果git clone中途中断可以添加 --recursive，添加代理http.proxy="http://127.0.0.1:1082"下载
 git clone  --recursive -c http.proxy="http://127.0.0.1:1082" https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86  toolclang
 ```
 # 设置环境
