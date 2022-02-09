@@ -25,8 +25,8 @@ export ARCH=arm64
 export SUBARCH=arm64
 # toolgcc中bin文件夹的位置 
 export CROSS_COMPILE=${PWD}/toolgcc/bin/aarch64-linux-android-
-# 添加环境变量
-export PATH=${PWD}/toolgcc/bin:/mnt/d/kernel/toolclang/clang-r433403/bin:$PATH
+# 添加环境变量    clang版本号b800f
+export PATH=${PWD}/toolgcc/bin:/mnt/d/kernel/toolclang/clang-r383902/bin:$PATH
 ```
 # 编译
 ```bash
