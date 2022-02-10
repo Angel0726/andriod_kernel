@@ -15,6 +15,7 @@
  ```
  (4) add toolchain path to PATH environment variable
 
+
 2. export some environment variable and build the kernel and dtb
 ```bash
 export SOURCE_ROOT=${PWD}
