@@ -1,19 +1,19 @@
 1.install toolchain and make tools for build kernel
 
- 1. mkdir -p ~/workspace/source; cd ~/workspace/source;
+ (1) mkdir -p ~/workspace/source; cd ~/workspace/source;
 
- 2. git clone kernel;
-```bash
-git clone https://github.com/realme-kernel-opensource/realme_6pro_7pro_8pro_X2-AndroidR-kernel-source.git msm-4.14
-```
+ (2) git clone kernel;
+ ```bash
+ git clone https://github.com/realme-kernel-opensource/realme_6pro_7pro_8pro_X2-AndroidR-kernel-source.git msm-4.14
+ ```
 
- 3. mkdir prebuild;
-```bash
-git clone https://android.googlesource.com/platform/prebuilts/build-tools;
-git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86;
-git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
-```
- 4. add toolchain path to PATH environment variable
+ (3) mkdir prebuild;
+ ```bash
+ git clone https://android.googlesource.com/platform/prebuilts/build-tools;
+ git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86;
+ git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+ ```
+ (4) add toolchain path to PATH environment variable
 
 2. export some environment variable and build the kernel and dtb
 ```bash
