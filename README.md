@@ -24,10 +24,9 @@ git clone https://android.googlesource.com/platform/prebuilts/build-tools;
 
 |                                                         |                                                              | google-gcc | google-clang | build-tools |      |
 | ------------------------------------------------------- | ------------------------------------------------------------ | ---------- | ------------ | ----------- | ---- |
-| [k30_ultra](k30_ultra.md)                               | R                                                            | 95280      | b800f        |             |      |
+| [k30_ultra](k30_ultra.md)                               | [R](https://github.com/MiCode/Xiaomi_Kernel_OpenSource/wiki/How-to-compile-kernel-standalone) | 95280      | b800f        |             |      |
 | [realme_6pro_7pro_8pro_X2](realme_6pro_7pro_8pro_X2.md) | [R](https://github.com/realme-kernel-opensource/realme_6pro_7pro_8pro_X2-AndroidR-kernel-source/blob/master/How-To-Compile) | 95280      | b800f        |             |      |
 |                                                         |                                                              |            |              |             |      |
-
 
 
 如何编译andriod教程
