@@ -1,3 +1,17 @@
+# 安装环境
+```bash
+# zlib1g-dev:i386、python-networkx没有安装包所以没有安装
+sudo apt-get install git ccache automake flex lzop bison \
+gperf build-essential zip curl zlib1g-dev  \
+g++-multilib  libxml2-utils bzip2 libbz2-dev \
+libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush \
+schedtool dpkg-dev liblz4-tool make optipng maven libssl-dev \
+pwgen libswitch-perl policycoreutils minicom libxml-sax-base-perl \
+libxml-simple-perl bc libc6-dev-i386 lib32ncurses5-dev \
+x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev xsltproc unzip
+# 必须用python，将python链接到python3
+sudo ln -s /usr/bin/python3 /usr/bin/python
+```
 # 下载编译工具
 ```
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 toolgcc
