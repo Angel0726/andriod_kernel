@@ -14,6 +14,7 @@ sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
 # 下载编译工具
 ```
+# git clone https://github.com/Angel0726/toolchains.git      可以使用里面的aarch64-linux-android-4.9
 git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 toolgcc
 git clone  --recursive -c http.proxy="http://127.0.0.1:1082" https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86  toolclang
 git clone https://android.googlesource.com/platform/prebuilts/build-tools;
