@@ -1,3 +1,4 @@
+https://www.sqlsec.com/2018/05/termux.html#toc-heading-31
 # 安装环境
 ```bash
 # zlib1g-dev:i386、python-networkx没有安装包所以没有安装
