@@ -42,8 +42,8 @@ export PATH=${source_dir}/toolgcc/bin:${source_dir}/toolclang/clang-r383902/bin:
 ```bash
 # 进入代码文件夹
 cd $source_dir/Xiaomi_Kernel_OpenSource
-ARCH=arm64 make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=$source_dir/toolclang/clang-bootstrap/bin/ld.lld cezanne_user_defconfig
-ARCH=arm64 make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=$source_dir/toolclang/clang-bootstrap/bin/ld.lld -j4
+ARCH=arm64 make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=ld.lld cezanne_user_defconfig
+ARCH=arm64 make CC=clang HOSTCC=gcc AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out CLANG_TRIPLE=aarch64-linux-gnu- CROSS_COMPILE=aarch64-linux-android- LD=ld.lld -j4
 ```
 ## MTK编译
 ```bash
